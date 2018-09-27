@@ -1,0 +1,146 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a
+{
+	color: blue;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+
+.main-nav li.active a
+{
+	border: 1px solid blue
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid blue
+}
+
+.row h1
+{
+	float: left;
+	color: blue;
+	padding: 10px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 45px;
+	font-weight: lighter;
+}
+
+body
+{
+	font-family: monospace;
+}
+
+.row 
+{
+	max-width: 1550px;
+	margin: auto;
+}
+
+.wrk
+{
+	float: left;
+	font-family: "Roboto", sans-serif;
+	padding-top: 200px;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+.wk
+{
+	font-family: "Roboto", sans-serif;
+	padding-top: 100px;
+	margin-left: 7%;
+	list-style: none;
+
+}
+
+.ats h1, .linamar h1, .dubdub h1
+{
+	font-size: 35px;
+	font-weight: thinner;
+	text-align: left;
+	padding-bottom: 10px;
+	padding-top: 40px;
+}
+
+.ats h2, .linamar h2, .dubdub h2
+{
+	font-size: 25px;
+	font-weight: normal;
+	color: maroon;
+	text-align: left;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.ats h3, .linamar h3, .dubdub h3
+{
+	font-size: 35px;
+	font-weight: normal;
+	color: black;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.ats li, .linamar li, .dubdub li
+{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.ats h1, .linamar h1, .dubdub h1, .ats h3, .linamar h3, .dubdub h3, /*.ats a, .linamar a, .dubdub a,*/ .ats img, .linamar img, .dubdub img
+{
+	display: inline-block;
+}
+
+
+
+.ats img, .linamar img, .dubdub img
+{
+	float: right;
+	width: 200px;
+	height: 200px;
+	padding-top: 1%;
+	margin-right: 5%;
+}
+
+/*
+.fa
+{
+	padding: 10px;
+	width: 16px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	margin-left: 15px;
+
+}
+
+.fa-linkedin
+{
+	background: #007bb5;
+	color: white;
+}*/
+
