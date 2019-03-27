@@ -18,7 +18,7 @@ body, html {
 {
 	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(static/hair.jpg);
 	height: 100%;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -28,7 +28,7 @@ body, html {
 {
 	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(static/ripleys.jpg);
 	height: 90%;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
@@ -43,6 +43,29 @@ body, html {
 	{
         background-attachment: scroll;
     }
+}
+
+.box {
+	float: left;
+	position: absolute;
+	bottom: 3vh;
+	left: 48%;
+}
+
+.arrow {
+	box-sizing: border-box;
+	height: 3vw;
+	width: 3vw;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+	border-bottom-width: 4px;
+	border-right-width: 4px;
 }
 
 .nav div {
@@ -82,25 +105,43 @@ body, html {
 	list-style: none;
 }
 
+.menu li {
+	padding-bottom: 2px;
+}
+
 .menu li ul {
 	float: left;
 	list-style: none;
 	display: none;
-	background-color: white;
+	background-color: #C1C1C1;
+	border-radius: 0.2vw;
+	text-align: center;
 }
 
 .menu li ul a {
 	color: black;
 	text-decoration: none;
-	padding: 5px 20px;
-	font-family: "Roboto", sans-serif;
+	padding: 1vw 2.2vw;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 2vw;
 }
 
-.menu:hover li ul{
+.menu:hover li ul {
 	display: block;
+	margin-left: 1vw;
+	border-style: solid;
+	border-width: 0.1vw;
+	border-color: black;
 }
 
+.menu:hover div {
+	width: 100%;
+}
+
+.hovs li a:hover {
+	color: white;
+}
+/*
 .main-nav
 {
 	float: right;
@@ -131,16 +172,22 @@ body, html {
 {
 	border: 1px solid blue
 }
-
+*/
 .row h1
 {
 	float: right;
-	color: blue;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #1501D1;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight: 400;
-	font-size: 7vw;
+	font-size: 6vw;
 	margin-top: 1vw;
 	margin-right: 2vw;
+}
+
+.about1
+{
+	background-image: url(static/light_blue.jpg);
+	width: 100%;
 }
 
 .abt h1
@@ -148,24 +195,66 @@ body, html {
 	color: blue;
 	font-family: "Roboto", sans-serif;
 	font-size: 250%;
-	font-weight: lighter;
 	text-align: center;
 	padding-top: 2%;
 	text-decoration: underline;
+}
+
+.abt table tr
+{
+	list-style: none;
+}
+
+.abt table tr th
+{
+	width: 33%;
+	padding-top: 2%;
+}
+
+.abt table tr td
+{
+	vertical-align: top;
+}
+
+.headerss
+{
+	text-align: center;
+	color: black;
+	font-size: 3vw;
 }
 
 .abt p 
 {
 	color: black;
 	font-family: "Roboto", sans-serif;
-	font-size: 170%;
+	font-size: 1.5vw;
 	font-weight: lighter;
-	text-align: center;
-	padding-top: 2%;
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-bottom: 2%;
+	text-align: left;
+	padding-top: 0.8vw;
+	padding-bottom: 0.8vw;
 	line-height: 110%;
+}
+
+.callme
+{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6vw;
+	font-weight: lighter;
+	padding-top: 3vw;
+}
+
+.me img
+{
+	height: 18vw;
+	width: 18vw;
+	margin-left: 7vw;
+}
+
+.me
+{
+	padding-top: 3vw;
+	padding-bottom: 2vw;
 }
 
 .fa
