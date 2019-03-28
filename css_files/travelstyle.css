@@ -124,10 +124,11 @@
 {
 	float: right;
 	color: blue;
-	padding: 1vw 4vw;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 4vw;
 	font-weight: lighter;
+	margin-top: 1vw;
+	margin-right: 2vw;
 }
 
 .place h2
