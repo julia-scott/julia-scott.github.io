@@ -57,7 +57,7 @@
 	<div id="2cool4schl" class="schl" style="background-color:white;padding-bottom: 3vh">
 		<h1>Systems Design Engineering</h1>
 		<h2>Class of 2021</h2>
-		<p>Ranked 6th in my class, Fall 2018</p>
+		<p>Deans List, 6th in my class, Fall 2018</p>
 		<table>
 			<tr>
 				<th>Programming Courses</th>
@@ -123,7 +123,7 @@
 				<div class="image" style="background-image:url(css_files/static/newrufus.png);">
 					<div class="rectangle">
 						<div class="lbl">
-							<p1>Rufus GUI</p1>
+							<p1>SmartScope Installer</p1>
 							<p2>C Programming | 2019</p2>
 						</div>
 					</div>
@@ -174,7 +174,7 @@
 		<div id="rufus" class="modal-window">
 		  <div>
 		    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-		    <h1>Rufus GUI</h1>
+		    <h1>SmartScope Installer</h1>
 		    <div>More info coming soon!</div>
 		  </div>
 		</div>
@@ -184,22 +184,26 @@
 		    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
 		    <h1>Colour Organ</h1>
 		    <div>More info coming soon!</div>
-		    <div>
+		    <div class="hovers">
 		    	<video muted id="myVideo">
 		    		<source src="css_files/static/colour_organ.mp4" type="video/mp4">
 		    		Your browser does not support the video tag.
 		    	</video>
-		    	<button id="myBtn" class='button play' onclick="playFunction()"></button>
-		    	<button id="pauseBtn" class='button play' onclick="pauseFunction()"></button>
+		    	<div class="container">
+		    		<div class="box2 center"></div>
+		    	</div>
 				<script>
 					var video = document.getElementById("myVideo");
 
-					function playFunction() {
-						video.play();
-					}
-					function pauseFunction() {
-						video.pause();
-					}
+					const box = document.querySelector('.box2');
+					box.addEventListener('click', (e)=>{
+						if (video.paused) {
+							video.play();
+						} else {
+							video.pause();
+						}
+						e.target.classList.toggle('pause');
+					})
 				</script>
 		    </div>
 		  </div>
