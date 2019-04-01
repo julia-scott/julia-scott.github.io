@@ -393,8 +393,8 @@ td ul li {
 }
 
 .modal-window h1 {
-  font-size: 150%;
-  margin: 0 0 15px;
+  font-size: 2.5vw;
+  margin: 0 0 2vw;
 }
 
 .list li {
@@ -415,6 +415,7 @@ td ul li {
 	font-size: 1.2vw;
 }
 
+/* Start of Trolley */
 .list #full {
 	background-color: #DEE2E2;
 	padding: 2vw;
@@ -459,15 +460,11 @@ td ul li {
 	display: block;
 }
 
-#lfp li {
-	height: 10vw;
-	margin-bottom: 0;
-}
-
-#lfp img {
+#one img {
 	width: 100%;
 	height: auto;
 	display: block;
+	margin-top: 1vw;
 }
 
 #one {
@@ -475,7 +472,28 @@ td ul li {
 	padding: 2vw;
 	width: 25%;
 	display: inline-block;
+	height: 11vw;
+	margin-bottom: 0;
 }
+
+/* Start of Cube */
+#cubic {
+	background-color: #DEE2E2;
+	padding: 2vw;
+	width: 25%;
+	display: inline-block;
+	height: 21vw;
+	margin-bottom: 0;
+	font-size: 1.2vw;
+}
+
+#cubic img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 1vw;
+}
+
 
 .modal-window video {
 	width: 100%;
