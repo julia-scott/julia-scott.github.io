@@ -172,57 +172,95 @@
 
 		<!--Start of popups-->
 		<div id="rufus" class="modal-window">
-		  <div>
-		    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-		    <h1>SmartScope Installer</h1>
-		    <div>More info coming soon!</div>
-		  </div>
+			<div>
+				<a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+				<h1>SmartScope Installer</h1>
+				<div>More info coming soon!</div>
+			</div>
 		</div>
 
 		<div id="organ" class="modal-window">
-		  <div>
-		    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-		    <h1>Colour Organ</h1>
-		    <div>More info coming soon!</div>
-		    <div class="hovers">
-		    	<video muted id="myVideo">
-		    		<source src="css_files/static/colour_organ.mp4" type="video/mp4">
-		    		Your browser does not support the video tag.
-		    	</video>
-		    	<div class="container">
-		    		<div class="box2 center"></div>
-		    	</div>
-				<script>
-					var video = document.getElementById("myVideo");
-
-					const box = document.querySelector('.box2');
-					box.addEventListener('click', (e)=>{
-						if (video.paused) {
-							video.play();
-						} else {
-							video.pause();
-						}
-						e.target.classList.toggle('pause');
-					})
-				</script>
-		    </div>
-		  </div>
+			<div>
+				<a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+				<h1>Colour Organ</h1>
+				<div>More info coming soon!</div>
+				<div class="hovers">
+					<video muted id="myVideo">
+						<source src="css_files/static/colour_organ.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+					</video>
+					<div class="container">
+						<div class="box2 center"></div>
+					</div>
+					<script>
+						var video = document.getElementById("myVideo");
+						const box = document.querySelector('.box2');
+						box.addEventListener('click', (e)=>{
+							if (video.paused) {
+								video.play();
+							} else {
+								video.pause();
+							}
+							e.target.classList.toggle('pause');
+						})
+					</script>
+				</div>
+			</div>
 		</div>
 
 		<div id="cube" class="modal-window">
-		  <div>
-		    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-		    <h1>3D Puzzle</h1>
-		    <div>More info coming soon!</div>
-		  </div>
+			<div>
+				<a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+				<h1>3D Puzzle</h1>
+				<div>More info coming soon!</div>
+			</div>
 		</div>
 
 		<div id="trolley" class="modal-window">
-		  <div>
-		    <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
-		    <h1>Tri-Wheel Trolley</h1>
-		    <div>More info coming soon!</div>
-		  </div>
+			<div>
+				<a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+				<h1 style="font-size: 2.5vw">Tri-Wheel Trolley</h1>
+				<ul class="list">
+					<li>Task
+						<ul>
+							<li>In groups of 5, design a product to improve the everyday lives of older adults.</li>
+						</ul>
+					</li>
+					<li id="full">Our Product
+						<ul>
+							<li style="width: 40%; display: inline-block;">We designed a trolley with a tri-wheel system that enables it to roll up and down stairs with ease.</li>
+							<img src="css_files/static/trolley.png">
+							<img src="css_files/static/fullsize.jpg">
+						</ul>
+					</li>
+					<li>Process
+						<ul>
+							<li>Project Proposal
+								<ul>
+									<li>The first part of our project proposal was the <strong>situation impact statement</strong> followed by a <strong>user needs assessment.</strong> This is where we identified and described our <strong>primary, secondary and tertiary users,</strong> as well as identifying our user needs. Next we outlined our <strong>problem space,</strong> which included a little bit of background, a <strong>situation of concern chart,</strong> and our <strong>requirements and constraints.</strong></li>
+								</ul>
+							</li>
+							<li id="persona">Personas
+								<ul>
+									<li style="width: 40%; display: inline-block;">We created three different primary user personas to help us better understand our users. Personas aid in identifying user <strong>requirements and constraints.</strong> </br> See one of our personas on the right.</li>
+									<img src="css_files/static/agnes.png">
+								</ul>
+							</li>
+							<li id="qfd">Quality Function Deployment Chart
+								<img src="css_files/static/qfd.jpg">
+							</li>
+							<li id="lfp">Low Fidelity Prototypes
+								<ul>
+									<li style="margin-bottom: -4vw">We made three different <strong>low fidelity prototypes</strong> and analyzed their strengths and weaknesses before settling on our final design.</li>
+									<li style="margin-left: 0" id="one">1. Tri-Wheel Trolley<img src="css_files/static/cart.png"></li>
+									<li id="one">2. Pulley System<img src="css_files/static/pulley.png"></li>
+									<li id="one">3. Stair Ramp<img src="css_files/static/ramp.png""></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>

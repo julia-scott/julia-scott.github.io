@@ -357,6 +357,7 @@ td ul li {
   z-index: 999;
   opacity: 0;
   pointer-events: none;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .modal-window:target {
@@ -365,16 +366,14 @@ td ul li {
 }
 
 .modal-window>div {
-  width: 400px;
+  width: 80%;
+  height: 80%;
   position: relative;
-  margin: 10% auto;
+  margin: 3% auto;
   padding: 2rem;
   background: #fff;
   color: #444;
-}
-
-.modal-window header {
-  font-weight: bold;
+  overflow: auto;
 }
 
 .modal-close {
@@ -396,6 +395,86 @@ td ul li {
 .modal-window h1 {
   font-size: 150%;
   margin: 0 0 15px;
+}
+
+.list li {
+	list-style: none;
+	font-size: 1.8vw;
+	color: black;
+	margin-left: 2vw;
+	margin-bottom: 4vw;
+}
+
+.list li ul li {
+	font-size: 1.3vw;
+	margin-top: 1vw;
+	line-height: 2vw;
+}
+
+.list li ul li ul li {
+	font-size: 1.2vw;
+}
+
+.list #full {
+	background-color: #DEE2E2;
+	padding: 2vw;
+	height: 12vw;
+}
+
+.list #full img {
+	width: auto;
+	height: 100%;
+	float: right;
+	margin-top: -2vw;
+	margin-left: 4vw;
+}
+
+#persona {
+	background-color: #DEE2E2;
+	padding: 2vw;
+	height: 37vw;
+}
+
+#persona img {
+	width: 35vw;
+	height: auto;
+	float: right;
+	margin-top: -2vw;
+	margin-left: 4vw;
+}
+
+#qfd {
+	background-color: #DEE2E2;
+	padding: 2vw;
+}
+
+#qfd img {
+	width: 100%;
+	height: auto;
+	margin-top: 2vw;
+	display: block;
+}
+
+#lfp {
+	display: block;
+}
+
+#lfp li {
+	height: 10vw;
+	margin-bottom: 0;
+}
+
+#lfp img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#one {
+	background-color: #DEE2E2;
+	padding: 2vw;
+	width: 25%;
+	display: inline-block;
 }
 
 .modal-window video {
